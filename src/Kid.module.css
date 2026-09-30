@@ -1,0 +1,33 @@
+.wrap {
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto;
+}
+
+.svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: visible;
+}
+
+.bob {
+  animation: bob 3.2s ease-in-out infinite;
+  transform-origin: 160px 412px;
+}
+
+@keyframes bob {
+  0%,
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
+  50% {
+    transform: translateY(-3px) scaleY(1.012);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bob {
+    animation: none;
+  }
+}

@@ -1,0 +1,126 @@
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 14px 16px 16px;
+  box-shadow: 0 1px 2px rgba(60, 40, 20, 0.06), 0 4px 16px rgba(60, 40, 20, 0.05);
+}
+
+.header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.title {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.stats {
+  display: flex;
+  gap: 12px;
+  font-size: 13px;
+  color: #6b5d50;
+  font-variant-numeric: tabular-nums;
+}
+
+.stats b {
+  font-weight: 700;
+  color: #2d2420;
+}
+
+.burn {
+  color: #9a8b7d;
+}
+
+.over b {
+  color: #d9534f;
+}
+
+.under b {
+  color: #3a9a6e;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(84px, 1fr));
+  gap: 8px;
+}
+
+.chip,
+.chipActive {
+  border-radius: 12px;
+  border: 1.5px solid #ece5db;
+  background: #faf7f2;
+  overflow: hidden;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.chipActive {
+  border-color: #c4956a;
+  background: #fff5ea;
+}
+
+.chipMain {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  width: 100%;
+  padding: 8px 4px 6px;
+  box-sizing: border-box;
+}
+
+.chipMain:active {
+  background: rgba(196, 149, 106, 0.15);
+}
+
+.emoji {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.name {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.kcal {
+  font-size: 11px;
+  color: #9a8b7d;
+}
+
+.qtyRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(196, 149, 106, 0.35);
+  background: #fff;
+}
+
+.qtyBtn {
+  all: unset;
+  cursor: pointer;
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  font-weight: 700;
+  color: #c4956a;
+  font-size: 15px;
+}
+
+.qtyBtn:hover {
+  background: rgba(196, 149, 106, 0.15);
+}
+
+.qty {
+  font-size: 12px;
+  font-weight: 600;
+  color: #6b4b2c;
+}
